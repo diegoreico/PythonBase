@@ -1,5 +1,4 @@
-# Python Base Project
-
+# {{cookiecutter.package_name}}
 ## Index
 
 1. [Overview](#overview)
@@ -10,13 +9,13 @@
 6. [Run](#run)
 
 ## <a name="overview">Overview</a>
-
+{{cookiecutter.project_short_description}}
 
 
 ## <a name="requirements">Requirements</a>
 
 This project has been developed using [Setuptools](https://setuptools.readthedocs.io/en/latest/). 
-So, `Python 3.6.9` and `pip3` are required.
+So, `Python 3` and `pip3` are required.
 
 ## <a name="installation">Installation</a>
 
@@ -44,21 +43,23 @@ further information read the [related documentation](https://pypi.org/project/py
 pytest
 
 # All tests verbose mode (not encouraged use logging module instead)
-pytest -s
+pytest -s --log-cli-level=INFO
 
 # Unit tests
-pytest etl/tests/unit
+pytest -s --log-cli-level=INFO {{cookiecutter.package_name}}/tests/unit
 
 # Integration tests
-pytest etl/tests/integration
+pytest -s --log-cli-level=INFO {{cookiecutter.package_name}}/tests/integration
 
 # Validation tests
-pytest etl/tests/validation
+pytest -s --log-cli-level=INFO {{cookiecutter.package_name}}/tests/validation
 ```
 
 ## <a name="run">Run</a>
 
 The package has a command-line entry point configured. This entry point is built using the library 
-[Click](https://palletsprojects.com/p/click/). To get all the possible commands, use `package-name --help`.
+[Click](https://palletsprojects.com/p/click/). To get all the possible commands, use `{{cookiecutter.cli_name}} --help`. This command is only available after running the command `pip install .`
+
+To run the command line without installing it, use the following command: `python3 -m {{cookiecutter.package_name}}.cli --help`
 
 
