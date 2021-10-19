@@ -19,5 +19,5 @@ setup(
     description="{{cookiecutter.project_short_description}}",
     author="Gradiant",
     author_email="dreiriz@gradiant.com",
-    keywords=[{{cookiecutter.project_short_description}}],
+    keywords=[{{cookiecutter.tags}}],
 )
