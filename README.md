@@ -1,6 +1,4 @@
-# SI-PR-01432-SchemaMatchig
-
-Intro
+# Generic Module Templade
 
 ## <a name="overview">Overview</a>
 Description
