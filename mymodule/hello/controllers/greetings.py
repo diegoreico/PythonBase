@@ -16,3 +16,4 @@ class GreetingsController:
         uc.execute()
         
         return uc.result
+    

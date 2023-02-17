@@ -23,3 +23,5 @@ class SayHelloUseCase(BaseUseCase):
     def execute(self):
         logging.info("Running sey hello use case")
         self._result = self._greetings_service.say_hello_to(self._person)
+
+        

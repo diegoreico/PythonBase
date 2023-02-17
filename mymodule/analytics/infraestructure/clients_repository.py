@@ -1,11 +1,11 @@
 
 import logging
 from typing import Any, List
-from mymodule.common.infraestructure.abstract_repository import AbstractRepository
+from mymodule.analytics.infraestructure.abstract_clients_repository import AbstractClientsRepository
 from mymodule.common.infraestructure.abstract_engine import AbstractEngine
 from mymodule.analytics.domain.entities.client import Client
 
-class ClientsRepository(AbstractRepository):
+class ClientsRepository(AbstractClientsRepository):
 
     def __init__(self, engine: AbstractEngine) -> None:
         self._engine = engine
