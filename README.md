@@ -13,13 +13,11 @@ So, `Python 3` and `pip3` are required.
 
 Dependencies are managed through the tool poetry that you can install as follows
 
-*Note: you need at least this versions to be able to use depencies groups inside pyproject.toml*
-
 ```
 pip install "poetry"
 ```
 
-When you use poetry, you can use all the commans listed in this files following the pattern
+When you use poetry, you can use all the commands listed in this files following the pattern
 ```
 poetry run [tool/programa/aplication]
 ```
