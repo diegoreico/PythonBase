@@ -96,16 +96,16 @@ further information read the [related documentation](https://pypi.org/project/py
 PYTHONPATH=. pytest ./src/tests
 
 # All tests verbose mode (not encouraged use logging module instead)
-pytest -s --log-cli-level=INFO
+PYTHONPATH=. pytest -s --log-cli-level=INFO
 
 # Unit tests
-pytest -s --log-cli-level=INFO src/tests/unit
+PYTHONPATH=. pytest -s --log-cli-level=INFO src/tests/unit
 
 # Integration tests
-pytest -s --log-cli-level=INFO src/tests/integration
+PYTHONPATH=. pytest -s --log-cli-level=INFO src/tests/integration
 
 # Validation tests
-pytest -s --log-cli-level=INFO src/tests/validation
+PYTHONPATH=. pytest -s --log-cli-level=INFO src/tests/validation
 ```
 
 ## <a name="run">Run</a>
