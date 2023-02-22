@@ -112,6 +112,6 @@ To run the command line without installing it, use the following command: `pytho
 
 ## Scaffolding
 
-- **src**: contiene el desarrollo realizado
+- **mymodule**: contiene el desarrollo realizado
 - **.github/workflows**: contiene los tareas de CI/CD definidas por Gradiant durante la realización del proyecto
-- **tools**: herramienta y utilidades de cara a ejecutar el servicio
+- **tools**: herramientas y utilidades de cara a ejecutar el servicio
